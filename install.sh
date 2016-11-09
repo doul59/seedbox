@@ -11,6 +11,7 @@ apt-get install -y git
 apt-get install -y fuse
 apt-get install -y nano
 apt-get install -y vim
+apt-get install -y unzip unrar bzip2
 debconf-set-selections <<< "postfix postfix/mailname string seedbox"
 debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
 apt-get install -y postfix
