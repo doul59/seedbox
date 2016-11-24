@@ -1,12 +1,12 @@
 # Seedbox
 Container for running SickRage, CouchPotato and qBittorrent storing on Amazon Cloud Drive easily
-(ACD provides unlimited storage for $60/year actually, with good performance)
+(ACD provides unlimited storage for $60/year actually, with good performance) - My volume is "/drive"
 
 - Clone this repos : `git clone https://github.com/doul59/seedbox.git`
 - Build: `docker build -t seedbox`.  
 - Put your oauth_data file into `<volume>/.cache/acd_cli/oauth_data  `
-- Run: `docker run --rm -P --net=host  --cap-add SYS_ADMIN --device /dev/fuse  --security-opt apparmor:unconfined -v <volume>:/root -it --name seedbox seedbox /initVolume.sh`  
-- Run: `docker run -P --net=host  --cap-add SYS_ADMIN --device /dev/fuse  --security-opt apparmor:unconfined -v <volume>:/root -itd --name seedbox seedbox /startDownloadSuite.sh` to start the apps. You can later attach to a bash waiting for you. 
+- Run: `docker run --rm -P --net=host  --cap-add SYS_ADMIN --device /dev/fuse  --security-opt apparmor:unconfined -v /drive:/root -it --name seedbox seedbox /initVolume.sh`  
+- Run: `docker run -P --net=host  --cap-add SYS_ADMIN --device /dev/fuse  --security-opt apparmor:unconfined -v /drive:/root -itd --name seedbox seedbox /startDownloadSuite.sh` to start the apps. You can later attach to a bash waiting for you. 
 
 ### Addresses
 - CouchPotato:5050 
