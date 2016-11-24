@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update
-#apt-get install -y software-properties-common
+apt-get install -y software-properties-common
 add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
 apt-get update
 apt-get install -y qbittorrent-nox
