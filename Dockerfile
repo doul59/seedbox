@@ -3,10 +3,9 @@ ADD install.sh /install.sh
 RUN /install.sh
 ADD sickrage_config.ini /sickrage_config.ini
 ADD couchpotato_settings.conf /couchpotato_settings.conf
-ADD qBittorrent.conf /qBittorrent.conf
+ADD deluged.service /deluged.service
+ADD deluge-web.service /deluge-web.service
 ADD remount.sh /remount.sh
-ADD move.sh /move.sh
-ADD couchpotato.patch /couchpotato.patch
 ADD initVolume.sh /initVolume.sh
 add startDownloadSuite.sh /startDownloadSuite.sh
 VOLUME /root/
