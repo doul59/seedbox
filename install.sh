@@ -1,6 +1,7 @@
 #!/bin/bash
 apt-get update
 apt-get install -y software-properties-common
+add-apt-repository ppa:deluge-team/ppa
 apt-get update
 apt-get install -y python
 apt-get install -y python3
