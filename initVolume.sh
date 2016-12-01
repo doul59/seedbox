@@ -1,6 +1,4 @@
 #!/bin/bash
-#adduser --disabled-password --system --home /var/lib/deluge --gecos "Deluge service" --group deluge
-#touch /var/log/deluged.log && touch /var/log/deluge-web.log && chown deluge:deluge /var/log/deluge*
 cd /root
 git clone https://github.com/CouchPotato/CouchPotatoServer.git &>/dev/null
 git clone https://github.com/SickRage/SickRage.git &>/dev/null
