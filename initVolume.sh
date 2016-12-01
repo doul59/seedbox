@@ -9,8 +9,7 @@ mkdir -p /root/acd/temp
 mkdir -p /root/acd/Shows
 mkdir -p /root/acd/Movies
 mkdir -p /root/.cache/acd_cli/
-mkdir -p /root/.config/qBittorrent
-cp -n /qBittorrent.conf /root/.config/qBittorrent/qBittorrent.conf
+cp -n /deluged.service /etc/systemd/system/deluged.service
 mkdir -p /root/.couchpotato
 cp -n /couchpotato_settings.conf /root/.couchpotato/settings.conf
 cp -n /sickrage_config.ini /root/SickRage/config.ini
@@ -19,7 +18,6 @@ mkdir -p /root/downloads/incomplete
 mkdir -p /root/downloads/torrents
 ln -s /root/acd/temp ~/downloads/Shows &>/dev/null
 ln -s /root/acd/Movies ~/downloads/Movies  &>/dev/null
-cp -f /move.sh /root/move.sh
 cp -f /startDownloadSuite.sh /root/startDownloadSuite.sh
 test -f /root/SickRage/_init || cp  -f /sickrage_config.ini ~/SickRage/config.ini
 touch /root/SickRage/_init
