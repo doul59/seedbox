@@ -11,8 +11,6 @@ mkdir -p /root/acd/temp
 mkdir -p /root/acd/Shows
 mkdir -p /root/acd/Movies
 mkdir -p /root/.cache/acd_cli/
-apt-get install deluged -y
-apt-get install deluge-webui -y
 #cp -n /deluged.service /etc/systemd/system/deluged.service
 #systemctl enable /etc/systemd/system/deluged.service
 #systemctl start deluged
