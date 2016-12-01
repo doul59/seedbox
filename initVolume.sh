@@ -11,14 +11,14 @@ mkdir -p /root/acd/temp
 mkdir -p /root/acd/Shows
 mkdir -p /root/acd/Movies
 mkdir -p /root/.cache/acd_cli/
-#cp -n /deluged.service /etc/systemd/system/deluged.service
-#systemctl enable /etc/systemd/system/deluged.service
-#systemctl start deluged
-#systemctl status deluged
-#cp -n /deluge-web.service /etc/systemd/system/deluge-web.service
-#systemctl enable /etc/systemd/system/deluge-web.service
-#systemctl start deluge-web
-#systemctl status deluge-web
+cp -n /deluged.service /etc/systemd/system/deluged.service
+systemctl enable /etc/systemd/system/deluged.service
+systemctl start deluged
+systemctl status deluged
+cp -n /deluge-web.service /etc/systemd/system/deluge-web.service
+systemctl enable /etc/systemd/system/deluge-web.service
+systemctl start deluge-web
+systemctl status deluge-web
 mkdir -p /root/.couchpotato
 cp -n /couchpotato_settings.conf /root/.couchpotato/settings.conf
 cp -n /sickrage_config.ini /root/SickRage/config.ini
