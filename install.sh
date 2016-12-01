@@ -1,9 +1,11 @@
 #!/bin/bash
 apt-get update
 apt-get install -y software-properties-common
-add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
 apt-get update
-apt-get install -y qbittorrent-nox
+adduser --disabled-password --system --home /var/lib/deluge --gecos "Deluge service" --group deluge
+touch /var/log/deluged.log && touch /var/log/deluge-web.log && chown deluge:deluge /var/log/deluge*
+apt-get install deluged
+apt-get install deluge-webui
 apt-get install -y python
 apt-get install -y python3
 apt-get install -y python3-pip
