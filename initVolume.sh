@@ -12,6 +12,7 @@ mkdir -p /root/.cache/acd_cli/
 mkdir -p /root/.couchpotato
 cp -n /couchpotato_settings.conf /root/.couchpotato/settings.conf
 cp -n /sickrage_config.ini /root/SickRage/config.ini
+cp -n /deluge_config.conf /root/.config/deluge/core.conf
 mkdir -p /root/downloads/completed
 mkdir -p /root/downloads/incomplete
 mkdir -p /root/downloads/torrents
