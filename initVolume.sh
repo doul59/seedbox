@@ -4,7 +4,8 @@ git clone https://github.com/CouchPotato/CouchPotatoServer.git &>/dev/null
 git clone https://github.com/SickRage/SickRage.git &>/dev/null
 cp -f /remount.sh /root/remount.sh
 mkdir -p /root/acd
-/root/remount.sh &>/dev/null|| { echo "ERROR : Could not mount ACD. Make sure your volume has .cache/acd/oauth_data file" ; exit 1; }
+#/root/remount.sh &>/dev/null|| { echo "ERROR : Could not mount ACD. Make sure your volume has .cache/acd/oauth_data file" ; exit 1; }
+/root/remount.sh
 mkdir -p /root/acd/temp
 mkdir -p /root/acd/Shows
 mkdir -p /root/acd/Movies
