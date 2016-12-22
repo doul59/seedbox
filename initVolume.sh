@@ -11,6 +11,7 @@ mkdir -p /root/acd/Shows
 mkdir -p /root/acd/Movies
 mkdir -p /root/.cache/acd_cli/
 mkdir -p /root/.couchpotato
+mkdir -p /root/.config/deluge
 cp -n /couchpotato_settings.conf /root/.couchpotato/settings.conf
 cp -n /sickrage_config.ini /root/SickRage/config.ini
 cp -n /deluge_config.conf /root/.config/deluge/core.conf
